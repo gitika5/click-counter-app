@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer,
+nav,
+main {
+    width: 50%;
+    align-items: center;
+    align-self: center;
+    border: 2px solid #8599bd;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header,
+footer {
+    height: 100px;
+}
+
+.section {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    align-self: center;
+    height: 300px;
+}
+
+button {
+    background-color: #4472c4;
+    color: white;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.red-bg {
+    background-color: #ff0000;
+}

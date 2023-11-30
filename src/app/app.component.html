@@ -1,0 +1,16 @@
+<div class="container">
+  <header [ngClass]="{'red-bg': containerIDClicked.includes(headerReff.nativeElement.localName) }" #headerRef>
+    <app-header [containerID]='headerReff.nativeElement.localName'></app-header>
+  </header>
+  <div class="section">
+    <nav [ngClass]="{'red-bg': containerIDClicked.includes(navReff.nativeElement.localName) }" #navRef>
+      <app-sidenav [containerID]='navReff.nativeElement.localName'></app-sidenav>
+    </nav>
+    <main [ngClass]="{'red-bg': containerIDClicked.includes(mainReff.nativeElement.localName) }" #mainRef>
+      <app-content [containerID]='mainReff.nativeElement.localName'></app-content>
+    </main>
+  </div>
+  <footer [ngClass]="{'red-bg': containerIDClicked.includes(footerReff.nativeElement.localName) }" #footerRef >
+    <app-footer [containerID]='footerReff.nativeElement.localName'></app-footer>
+  </footer>
+</div>
